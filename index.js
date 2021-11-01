@@ -31,6 +31,7 @@ if((textbox[e[0]].innerText === textbox[e[1]].innerText) && (textbox[e[2]].inner
     isgameover = true;
     document.querySelector(".line").style.transform = `translate(${e[3]}vw,${e[4]}vw) rotate(${e[5]}deg)`;
     document.querySelector(".line").style.width="27vw";
+    gameOverSound.play();
 }
 // else {
 //     document.querySelector(".gameInfo").innerText = "Game Over!!!!";
